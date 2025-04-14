@@ -2,46 +2,7 @@
     ViewData["Title"] = "Shortcut";
 }
 
-<div class="d-flex align-items-center justify-content-center mb-4">
-
-	<img src="~/imagen/logo shortcut.png" alt="Logo" style="width: 120px; height: auto; margin-right: 10px;" />
-
- 
-    <h1 class="display-4 mb-0">Shortcut</h1>
-</div>
-
-<div class="text-center"> <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-
-<div class="mb-3">
-    <a asp-action="Agregar" class="btn" style="background-color: #818cf8; color: white;">Agregar</a>
-    <a asp-action="Eliminar" class="btn" style="background-color: #818cf8; color: white;">Eliminar</a>
-    <a asp-action="Editar" class="btn" style="background-color: #818cf8; color: white;">Editar</a>
-</div>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre Completo</th>
-            <th>Puesto</th>
-            <th>Sueldo Base</th>
-            <th>Sueldo Total</th>
-            <th>Horario</th>
-            <th>Jefe Inmediato</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var empleado in Model)
-        {
-            <tr>
-                <td>@empleado.ID</td>
-                <td>@empleado.nombre_completo</td>
-                <td>@empleado.puesto</td>
-                <td>@empleado.sueldo_base</td>
-                <td>@empleado.sueldo_total</td>
-                <td>@empleado.horario</td>
-                <td>@empleado.jefe_inmediato_ID</td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+            return View();
