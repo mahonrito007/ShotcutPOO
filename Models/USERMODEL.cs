@@ -1,5 +1,3 @@
-﻿using System.Reflection;
-
 namespace ShotcutPOO.Models
 {
  
@@ -15,6 +13,4 @@ namespace ShotcutPOO.Models
         public int jefe_inmediato_ID { get; set; }
 
     }
-
- 
 }
